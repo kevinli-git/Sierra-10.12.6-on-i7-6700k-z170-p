@@ -23,7 +23,7 @@ adjust order to 1st.
 2. install latest nvidia gtx webdriver
 3. open /Clover/config.plist with Clover Configurator, 
   on Boot section, select nvda_drv=1, 
-  on System Parameters - check NvidiaWeb, InjectKexts Yes
+  on System Parameters, check NvidiaWeb, InjectKexts Yes
   on SMBIOS, right side dropdown, select iMac 14,2
 4. reboot
 5. Now in Nvidia Driver Manager select web driver, reboot again
@@ -35,9 +35,21 @@ adjust order to 1st.
 4. reboot
 
 ## ALC887 on board sound card
-1. backup /System/Library/Extensions/AppleHDA.kext, can restore it with kext utility later if necessary.
+1. backup /System/Library/Extensions/AppleHDA.kext, so that can restore it with kext utility later if necessary.
 2. /Clover/config.plist, 
    on ACPI section, add "Rename HDAS to HDEF" DSDT patch;
    on Devices section, Audio 1 Inject, (uncheck ResetHDA)
-3. Multibeast, install Audio drivers ALC887 current and 100 / 200 Series Audi; Build and Install.
-4. reboot
+3. Multibeast, install Audio drivers ALC887 current and 100 / 200 Series Audio; Build and Install.
+4. put SSDT-HDEF-1.aml to /Clover/ACPI/patched (SSDT patch) https://github.com/toleda/audio_ALCInjection/blob/master/ssdt_hdef/ssdt_hdef-1-100-hdas.zip
+5. reboot
+6. test with audio_codecdetect_v2.3.command (chmod 755 to excute https://github.com/toleda/audio_CloverALC/blob/master/audio_cloverALC-130.command.zip)
+
+Onboard audio codec
+Realtek: 0x10ec0887
+Name: Realtek ALC887
+Audio ID: 1
+
+Valid audio codec, audio device and Audio ID; audio injection is working
+Finished
+7. AppleALC inject method doesn't work on z170-p.
+
