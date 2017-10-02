@@ -53,3 +53,12 @@ Valid audio codec, audio device and Audio ID; audio injection is working
 Finished
 7. AppleALC inject method doesn't work on z170-p.
 
+## Realtek RTL8111h on board ethernet card
+1. download RehabMan-Realtek-Network-v2-2017-0322.zip, extract RealtekRTL8111.kext and install it into /S/E/L
+
+## Fix app store - cannot verify your device issue
+1. make sure ethernet card is builtin and en0, usb wifi dongle is en1
+2. update com.apple.Boot.plist in /Library/Preferences/SystemConfiguration
+  <key>EthernetBuiltIn</key>
+	<string>Yes</string>
+3. reboot  
