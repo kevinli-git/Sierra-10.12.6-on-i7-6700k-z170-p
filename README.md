@@ -46,13 +46,14 @@ adjust order to 1st.
 5. reboot
 6. test with audio_codecdetect_v2.3.command (chmod 755 to excute https://github.com/toleda/audio_CloverALC/blob/master/audio_cloverALC-130.command.zip )
 
-Onboard audio codec
-Realtek: 0x10ec0887
-Name: Realtek ALC887
-Audio ID: 1
+   Onboard audio codec
+   Realtek: 0x10ec0887
+   Name: Realtek ALC887
+   Audio ID: 1
 
-Valid audio codec, audio device and Audio ID; audio injection is working.
-Finished.
+   Valid audio codec, audio device and Audio ID; audio injection is working.
+   Finished.
+   
 7. AppleALC inject method doesn't work on z170-p.
 
 ## Realtek RTL8111h on board ethernet card
