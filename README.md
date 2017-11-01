@@ -44,15 +44,15 @@ adjust order to 1st.
 3. Multibeast, install Audio drivers ALC887 current and 100 / 200 Series Audio; Build and Install.
 4. put SSDT-HDEF-1.aml to /Clover/ACPI/patched (SSDT patch) https://github.com/toleda/audio_ALCInjection/blob/master/ssdt_hdef/ssdt_hdef-1-100-hdas.zip
 5. reboot
-6. test with audio_codecdetect_v2.3.command (chmod 755 to excute https://github.com/toleda/audio_CloverALC/blob/master/audio_cloverALC-130.command.zip)
+6. test with audio_codecdetect_v2.3.command (chmod 755 to excute https://github.com/toleda/audio_CloverALC/blob/master/audio_cloverALC-130.command.zip )
 
 Onboard audio codec
 Realtek: 0x10ec0887
 Name: Realtek ALC887
 Audio ID: 1
 
-Valid audio codec, audio device and Audio ID; audio injection is working
-Finished
+Valid audio codec, audio device and Audio ID; audio injection is working.
+Finished.
 7. AppleALC inject method doesn't work on z170-p.
 
 ## Realtek RTL8111h on board ethernet card
