@@ -1,10 +1,12 @@
 # Sierra-10.12.6 on i7-6700k, asus z170-p, asus GTX970, realtek alc887
 
-## bios setup
+## Bios setup
+1. load Optimized Defaults
+2. Disable VT-d, disable fastboot, disable secure boot, ostype -> other os, enable AHCI, IOAPIC 24-119 Entries enable,
+   USB config -> Set XHCI handoff Enable,
+   USB config -> legacy USB support - auto. 
 
-disable fastboot, secure boot, enable AHCI, 
-
-## install Sierra
+## Install Sierra
 1. install osx with unibeast usb drive installer.
 2. before install, expend existing ESP (EFI system partition) to > 200M with DiskGenius.
 3. during install, run disk utility, select Mac with Journel format the target drive, also name it as OSX, otherwise it will be called "--".
